@@ -1,0 +1,106 @@
+
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+        .header {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 40px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .nav a:hover {
+            background-color: #444;
+        }
+        .nav a.active {
+            background-color: #ff9900;
+        }
+        .content {
+            padding: 20px;
+        }
+        .category-bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        .category-bar div {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .category-bar div:hover {
+            background-color: #555;
+        }
+        .category-bar .active {
+            background-color: #ff9900;
+        }
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .movie {
+            background-color: #333;
+            margin: 10px;
+            width: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .movie img {
+            width: 100%;
+        }
+        .movie-info {
+            padding: 10px;
+        }
+        .movie-info h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .movie-info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .movie-info .rating {
+            display: flex;
+            align-items: center;
+        }
+        .movie-info .rating i {
+            color: #ff9900;
+            margin-right: 5px;
+        }
+        .movie-info .quality {
+            background-color: #00cc00;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .category-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .movies {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
